@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище LibraryModelContainer" CdmEntityContainer="LibraryEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LibraryModel.Books">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="id_Reader" ColumnName="id_Reader" />
+          <ScalarProperty Name="DatePublishing" ColumnName="DatePublishing" />
+          <ScalarProperty Name="id_book" ColumnName="id_book" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Kolvo" ColumnName="Kolvo" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="id_publishing" ColumnName="id_publishing" />
+          <ScalarProperty Name="id_Genre" ColumnName="id_Genre" />
+          <ScalarProperty Name="id_Categories" ColumnName="id_Categories" />
+          <ScalarProperty Name="id_Format" ColumnName="id_Format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="LibraryModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="id_Categories" ColumnName="id_Categories" />
+          <ScalarProperty Name="NameCat" ColumnName="NameCat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Format">
+      <EntityTypeMapping TypeName="LibraryModel.Format">
+        <MappingFragment StoreEntitySet="Format">
+          <ScalarProperty Name="id_Format" ColumnName="id_Format" />
+          <ScalarProperty Name="NameFor" ColumnName="NameFor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genre">
+      <EntityTypeMapping TypeName="LibraryModel.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="id_Genre" ColumnName="id_Genre" />
+          <ScalarProperty Name="NameGe" ColumnName="NameGe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publishing">
+      <EntityTypeMapping TypeName="LibraryModel.Publishing">
+        <MappingFragment StoreEntitySet="Publishing">
+          <ScalarProperty Name="id_publishing" ColumnName="id_publishing" />
+          <ScalarProperty Name="NamePub" ColumnName="NamePub" />
+          <ScalarProperty Name="id_citys" ColumnName="id_citys" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reader">
+      <EntityTypeMapping TypeName="LibraryModel.Reader">
+        <MappingFragment StoreEntitySet="Reader">
+          <ScalarProperty Name="reader_s_ticket_number" ColumnName="reader's ticket number" />
+          <ScalarProperty Name="phone_number" ColumnName="phone number" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="date_of_issue" ColumnName="date of issue" />
+          <ScalarProperty Name="date_of_delivery" ColumnName="date of delivery" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id_Reader" ColumnName="id_Reader" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LibraryModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище LibraryModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище LibraryModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище LibraryModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище LibraryModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище LibraryModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище LibraryModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище LibraryModel.sp_upgraddiagrams" />
+    <EntitySetMapping Name="Citys">
+      <EntityTypeMapping TypeName="LibraryModel.Citys">
+        <MappingFragment StoreEntitySet="Citys">
+          <ScalarProperty Name="NameCity" ColumnName="NameCity" />
+          <ScalarProperty Name="id_citys" ColumnName="id_citys" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
