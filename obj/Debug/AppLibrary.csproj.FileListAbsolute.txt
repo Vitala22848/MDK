@@ -88,3 +88,4 @@ C:\Users\colav\OneDrive\Desktop\AppLibrary\obj\Debug\AppLibrary.Properties.Resou
 C:\Users\colav\OneDrive\Desktop\AppLibrary\obj\Debug\AppLibrary.csproj.GenerateResource.cache
 C:\Users\colav\OneDrive\Desktop\AppLibrary\obj\Debug\AppLibrary.csproj.CoreCompileInputs.cache
 C:\Users\colav\OneDrive\Desktop\AppLibrary\obj\Debug\AppLibrary.csproj.CopyComplete
+C:\Users\Студент\Desktop\AppLibrary\obj\Debug\AppLibrary.csproj.ResolveComReference.cache
