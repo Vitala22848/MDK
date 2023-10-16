@@ -21,19 +21,19 @@ using System.Data.Entity.Core.Objects;
 using System.Linq;
 
 
-public partial class LibraryEntities : DbContext
+public partial class lesuser16Entities : DbContext
     {
-        private static LibraryEntities _context; // поле контекста данных
+        private static lesuser16Entities _context; // поле контекста данных
 
-        public static LibraryEntities GetContext() //метод получения контекста
+        public static lesuser16Entities GetContext() //метод получения контекста
         {
             if (_context == null)
             {
-                _context = new LibraryEntities();
+                _context = new lesuser16Entities();
             }
             return _context;
         }
-        public LibraryEntities()
+        public lesuser16Entities()
         : base("name=LibraryEntities")
     {
 
